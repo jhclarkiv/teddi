@@ -1,0 +1,53 @@
+#park {
+  background: no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: #b3c08e;
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-top: 300px;
+  z-index: -1;
+}
+
+
+
+body {
+  background-color: #b3c08e;
+  background-image: url('./images/landscape-scene.png');
+
+}
+
+header {
+  display:block;
+  width: 100%
+  z-index: 0;
+}
+
+#logo {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#title {
+  margin-left: auto;
+  margin-right: auto;
+  width: 850px;
+  display: block;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Quantico', sans-serif;
+  font-size: 84px;
+  margin: 10px;
+
+}
+
+main {
+  display:block;
+}

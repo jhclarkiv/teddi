@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Meta -->
+    <meta charset="UTF-8">
+    <title>T.E.D.D.I.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
+  </head>
+
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Changa&family=Quantico:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- HTML Below -->
+  <body>
+    <div id="container">
+      <img src="./resources/images/landscape-scene.png" id="park">
+    <header role="banner">
+    <img src="./resources/images/teddi-graphic.png" alt="TEDDI illustration" id="logo">
+    <div id="title">
+      <h3>Hello! I am</h3>
+      <h1>T.E.D.D.I.</h1>
+      <h3>Technologically Enhanced Data Distribution Intelligence</h3>
+    </div>
+    </header>
+
+<!-- Main -->
+    <main id="main">
+       <div id="title">
+         <h1></h1>
+       </div>
+       <div id="description">
+         <p></p>
+       </div>
+
+
+<!-- Survey Form -->
+       <div id="survey-form">
+         <label for="name" id="name-label">Name:</label><br>
+         <input type="text" id="name" name="name" placeholder="Enter your name"><br>
+         <br>
+         <label for="email" id="email-label">Email:</label><br>
+         <input type="email" id="email" name="email" placeholder="Enter you email"><br>
+         <br>
+         <label for="number" id="number-label">Age: Optional</label><br>
+         <input type="number" id="number" name="number" placeholder="Enter your age" min="1" max="120"><br>
+         <br>
+         <label for="dropdown" id="dropdown-label">Dropdown:</label><br>
+         <select type="dropdown" id="dropdown" name="dropdown" placeholder="Select an option">
+           <option value="select an option">Select an option</option>
+           <option value="Southwest">Southwest</option>
+           <option value="Northwest">Northwest</option>
+           <option value="Midwest">Midwest</option>
+           <option value="Northeast">Northeast</option>
+           <option value="Gulfcoast">Gulfcoast</option>
+        </select><br>
+        <br>
+        <label for="radio" id="radio-label">How likely are you to visit a National Park this year?</label><br>
+        <input type="radio" id="veryvery" name="visit" value="veryvery">
+        <label for="veryvery">Very, Very Likely</label><br>
+        <input type="radio" id="very" name="visit" value="very">
+        <label for="very">Very Likely</label><br>
+        <input type="radio" id="likely" name="visit" value="likely">
+        <label for="likely">Likely maybe</label><br>
+        <input type="radio" id="notlikely" name="visit" value="notlikely">
+        <label for="notlikely">Not Likely</label><br>
+        <input type="radio" id="notverylikely" name="visit" value="notverylikely">
+        <label for="notverylikely">Not Very Likely</label><br>
+        <br>
+        <input type="checkbox" id="park1" name="park1" value="Everglades">
+        <label for="park1">Everglades National Park</label><br>
+        <input type="checkbox" id="park2" name="park2" value="Yellowstone">
+        <label for="park2">Yellowstone National Park</label><br>
+        <input type="checkbox" id="park3" name="park3" value="Yosemite">
+        <label for="park3">Yosemite National Park</label><br>
+        <input type="checkbox" id="park4" name="park4" value="JoshuaTree">
+        <label for="park4">Joshua Tree National Park</label><br>
+        <input type="checkbox" id="park5" name="park5" value="GrandCanyon"
+        <label for="park5">Grand Canyon National Park</label><br>
+        <br>
+        <label for="textarea">Additional Comments:</label>
+        <textarea id="textarea" name="textarea" rows="5" cols="">
+        </textarea>
+        <br><br>
+        <button type="submit" form="survey-form" value="Submit">Submit</button>
+        </div>
+
+
+    </main>
+
+
+  </div>
+
+
+
+
+
+  </body>
+</html>
