@@ -14,15 +14,27 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Changa&family=Quantico:wght@400;700&display=swap" rel="stylesheet">
 
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+
 <!-- HTML Below -->
   <body>
-    <div id="container">
-      <img src="./resources/images/landscape-scene.png" id="park">
+  <div id="background">
+    <div class="container">
+      <div class="imageOne image"><img src="./resources/images/teddi-graphic.png"></div>
+      <div class="imageTwo image"><img src="./resources/images/ring-1.png"></div>
+      <div class="imageThree image"><img src="./resources/images/ring-2.png"></div>
+      <div class="imageFour image"><img src="./resources/images/ring-3.png"></div>
+      <div class="imageFive image"><img src="./resources/images/ring-4.png"></div>
+    </div>
+
+
     <header role="banner">
-    <img src="./resources/images/teddi-graphic.png" alt="TEDDI illustration" id="logo">
-    <div id="title">
-      <h3>Hello! I am</h3>
-      <h1>T.E.D.D.I.</h1>
+    <div id="logo">
+      <h4>- Hello! I am -</h4>
+      <h2>T.E.D.D.I.</h2>
+      <hr>
       <h3>Technologically Enhanced Data Distribution Intelligence</h3>
     </div>
     </header>
@@ -30,73 +42,166 @@
 <!-- Main -->
     <main id="main">
        <div id="title">
-         <h1></h1>
+         <h1>Let's Explore!</h1>
        </div>
+
        <div id="description">
-         <p></p>
+         <p>Do you love our National Parks? We sure do! That’s why we created <b>T.E.D.D.I. </b>- a Technologically Enhanced Data Distribution Intelligence.
+         <br>
+         <br>
+         T.E.D.D.I. uses the most sophisticated technologies to bring you news, information, and travel tips about your favorite National Parks. <i>Is this weekend good weather for hiking at Yosemite? Where can I camp at the Grand Canyon? What is the best month to visit the Great Smoky Mountains?</i>
+         <br>
+         <br>
+         Just tell <b>T.E.D.D.I.</b> about your travel plans and he will happily and dutifully send you updates about your favorite national parks.
+       </p>
        </div>
+
+       <br>
+       <hr id="hr2">
+       <hr id="hr3">
+
 
 
 <!-- Survey Form -->
-       <div id="survey-form">
+       <form id="survey-form" action="" method="POST" enctype="multipart/form-data" name="EmailForm">
+         <!-- Personal Info -->
          <label for="name" id="name-label">Name:</label><br>
          <input type="text" id="name" name="name" placeholder="Enter your name"><br>
          <br>
          <label for="email" id="email-label">Email:</label><br>
          <input type="email" id="email" name="email" placeholder="Enter you email"><br>
          <br>
-         <label for="number" id="number-label">Age: Optional</label><br>
+         <label for="number" id="number-label">Age: (optional)</label><br>
          <input type="number" id="number" name="number" placeholder="Enter your age" min="1" max="120"><br>
          <br>
-         <label for="dropdown" id="dropdown-label">Dropdown:</label><br>
+
+         <!--Radio-->
+         <label for="radio-group1" id="radio-group-label">Have you visited a National Park in the last 2 years?</label>
+         <div id="radio-group1">
+
+         <input type="radio" id="yesno" name="yesno" value="yes">
+         <label>Yes</label><br>
+         <input type="radio" id="yesno" name="yesno" value="no">
+         <label>No</label><br>
+         </div>
+
+         <!--Checkbox-->
+         <br>
+         <label for="parks-group" id="parks-visited">Which of the following National Parks did you visit?</label><br>
+         <input type="checkbox" id="park-name" name="park1" value="Grand Canyon">
+         <label for="park1">Grand Canyon</label><br>
+         <input type="checkbox" id="park-name" name="park2" value="Acadia">
+         <label for="park2">Acadia</label><br>
+         <input type="checkbox" id="park-name" name="park3" value="Cuyahuga Valley">
+         <label for="park3">Cuyahuga Valley</label><br>
+         <input type="checkbox" id="park-name" name="park4" value="JoshuaTree">
+         <label for="park4">Joshua Tree National Park</label><br>
+         <input type="checkbox" id="park-name" name="park5" value="Jean Lafitte">
+         <label for="park5">Jean Lafitte / Barataria Preserve</label><br>
+         <input type="checkbox" id="park-name" name="park6" value="Grand Teton">
+         <label for="park6">Grand Teton</label><br>
+         <input type="checkbox" id="park-name" name="park7" value="Greatsmokymtn">
+         <label for="park7">Great Smoky Mountains</label><br>
+         <input type="checkbox" id="park-name" name="park8" value="Olympic">
+         <label for="park8">Olympic</label><br>
+         <input type="checkbox" id="park-name" name="park9" value="Rocky Mountains">
+         <label for="park9">Rocky Mountains</label><br>
+         <input type="checkbox" id="park-name" name="park10" value="Yellowstone">
+         <label for="park10">Yellowstone</label><br>
+         <input type="checkbox" id="park-name" name="park11" value="Yosemite">
+         <label for="park11">Yosemite</label><br>
+         <input type="checkbox" id="park-name" name="park12" value="Zion">
+         <label for="park12">Zion</label><br>
+         <label for="park-other" id="park-other-label">Other:</label>
+         <input type="text" id="park-name-other" name="park-other" placeholder="Please specify">
+         <br>
+         <br>
+         <br>
+
+         <!-- Dropdown -->
+         <label for="dropdown" id="dropdown-label">On your last park visit, how many days did you spend in the park?</label><br>
          <select type="dropdown" id="dropdown" name="dropdown" placeholder="Select an option">
            <option value="select an option">Select an option</option>
-           <option value="Southwest">Southwest</option>
-           <option value="Northwest">Northwest</option>
-           <option value="Midwest">Midwest</option>
-           <option value="Northeast">Northeast</option>
-           <option value="Gulfcoast">Gulfcoast</option>
+           <option value="0-1">0 to 1 days</option>
+           <option value="2-3">2 to 3 days</option>
+           <option value="4-5">4 to 5 days</option>
+           <option value="6-7">6 to 7 days</option>
+           <option value="7plus">Over a week</option>
         </select><br>
         <br>
-        <label for="radio" id="radio-label">How likely are you to visit a National Park this year?</label><br>
-        <input type="radio" id="veryvery" name="visit" value="veryvery">
-        <label for="veryvery">Very, Very Likely</label><br>
-        <input type="radio" id="very" name="visit" value="very">
-        <label for="very">Very Likely</label><br>
-        <input type="radio" id="likely" name="visit" value="likely">
-        <label for="likely">Likely maybe</label><br>
-        <input type="radio" id="notlikely" name="visit" value="notlikely">
-        <label for="notlikely">Not Likely</label><br>
-        <input type="radio" id="notverylikely" name="visit" value="notverylikely">
-        <label for="notverylikely">Not Very Likely</label><br>
+
+        <!--Rate you visit-->
+
+        <label for="radio" id="radio-label">Please, rate your overall satisfaction based on your most recent park visit:</label><br>
+        <div id="radio-group1">
+        <input type="radio" id="rating" name="rating" value="very-satisfied">
+        <label for="very-satisfied">Very Satisfied</label><br>
+        <input type="radio" id="rating" name="visit" value="satisfied">
+        <label for="satisfied">Satisfied</label><br>
+        <input type="radio" id="rating" name="visit" value="unsatisfied">
+        <label for="unsatisfied">Unsatisfied</label><br>
+        <input type="radio" id="rating" name="visit" value="very-unsatisfied">
+        <label for="very-unsatisfied">Very Unsatisfied</label>
+        </div>
         <br>
-        <input type="checkbox" id="park1" name="park1" value="Everglades">
-        <label for="park1">Everglades National Park</label><br>
-        <input type="checkbox" id="park2" name="park2" value="Yellowstone">
-        <label for="park2">Yellowstone National Park</label><br>
-        <input type="checkbox" id="park3" name="park3" value="Yosemite">
-        <label for="park3">Yosemite National Park</label><br>
-        <input type="checkbox" id="park4" name="park4" value="JoshuaTree">
-        <label for="park4">Joshua Tree National Park</label><br>
-        <input type="checkbox" id="park5" name="park5" value="GrandCanyon"
-        <label for="park5">Grand Canyon National Park</label><br>
         <br>
-        <label for="textarea">Additional Comments:</label>
+
+        <!--Smartphone-->
+
+        <label for="radio" id="radio-label">On your most recent visit, did you own a smartphone?</label><br>
+        <div id="radio-group1">
+        <input type="radio" id="smartphone" name="smartphone" value="yes">
+        <label for="smartphone">Yes</label><br>
+        <input type="radio" id="smartphone" name="smartphone" value="No">
+        <label for="smartphone">No</label><br>
+        </div>
+        <br>
+        <br>
+
+
+        <!--How Likely to Visit-->
+
+        <label for="radio" id="radio-label">In general, how likely are you to visit a National Park versus some other vacation spot?</label><br>
+        <div id="radio-group1">
+        <input type="radio" id="rating" name="rating" value="very-likely">
+        <label for="very-likely">Very Likely</label><br>
+        <input type="radio" id="rating" name="visit" value="likely">
+        <label for="likely">Likely</label><br>
+        <input type="radio" id="rating" name="visit" value="unlikely">
+        <label for="unlikely">Unlikely</label><br>
+        <input type="radio" id="rating" name="visit" value="very-unlikely">
+        <label for="very-unlikely">Very Unlikely</label>
+        </div>
+        <br>
+        <br>
+
+
+        <!--Additonal Comments-->
+        <label for="textarea">Additional Comments:</label><br>
         <textarea id="textarea" name="textarea" rows="5" cols="">
         </textarea>
         <br><br>
-        <button type="submit" form="survey-form" value="Submit">Submit</button>
-        </div>
-
+        <button type="submit" id="button" form="survey-form" value="Submit">Submit</button>
+      </form>
 
     </main>
 
+    <footer id="footer">
+      <div id="footer-content">
+      <div id="john-illustration">
+        <img src="./resources/images/john-illustration.png" id="illustration-image" alt="An illustration of John Clark IV">
+      </div>
+      <div>
+        <h5>This webpage is designed, illustrated, and developed by John Clark IV.</h5>
+        <h5>&#169; 2021 All Rights Reserved.</h5>
+      </div>
+    </div>
+    </footer>
+
+
+
+
 
   </div>
-
-
-
-
-
   </body>
 </html>
