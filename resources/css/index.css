@@ -1,53 +1,385 @@
-#park {
-  background: no-repeat center center fixed;
+body {
+background-color: #b3c08e;
+}
+
+#background {
+  background: url('../images/landscape-scene.png') no-repeat center bottom fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-color: #b3c08e;
-  width: 100%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  padding-top: 300px;
-  z-index: -1;
 }
 
+.container {
+  position: relative;
+  padding-top: 150px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
+.image {
+  position: absolute;
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.5));
+  filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.5));
+  left: 50%;
+  margin-left: -300px;
 
-body {
-  background-color: #b3c08e;
-  background-image: url('./images/landscape-scene.png');
+}
 
+.imageOne {
+  z-index: 0;
+}
+.imageOne img {
+  height: 600px;
+  width: 600px;
+}
+
+.imageTwo {
+  z-index: 0;
+  animation: rotation 14s infinite linear;
+}
+.imageTwo img {
+  height: 600px;
+  width: 600px;
+}
+
+.imageThree {
+  z-index: 0;
+  animation: rotation 7s infinite linear;
+}
+.imageThree img {
+  height: 600px;
+  width: 600px;
+}
+
+.imageFour {
+  z-index: 0;
+  animation: rotation 12s infinite linear;
+}
+.imageFour img {
+  height: 600px;
+  width: 600px;
+}
+
+.imageFive {
+  z-index: 0;
+  animation: rotation 20s infinite linear;
+}
+.imageFive img {
+  height: 600px;
+  width: 600px;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
 
 header {
   display:block;
-  width: 100%
-  z-index: 0;
+  padding-top: 150px;
+  position: relative;
 }
 
 #logo {
   margin-left: auto;
   margin-right: auto;
-}
-
-#title {
-  margin-left: auto;
-  margin-right: auto;
-  width: 850px;
+  margin-top: 440px;
+  margin-bottom: 60px;
   display: block;
   text-align: center;
+  z-index: 0;
+  background-color: rgba(41, 81, 84, 0.33);
+  width: 800px;
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.5));
+  filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.5));
+  border-style: solid;
+  border-width: 3px;
+  border-color: white;
+  padding-bottom: 20px;
+
 }
 
-h1 {
+h2 {
   font-family: 'Quantico', sans-serif;
-  font-size: 84px;
-  margin: 10px;
+  font-size: 130px;
+  margin-top: -40px;
+  margin-bottom: -30px;
+  color: white;
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.5));
+  filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.5));
 
 }
+
+h3 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 18px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-family: 'OpenSans', sans-serif;
+  font-size: 24px;
+  font-weight: 200px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.5));
+  filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.5));
+}
+
+hr {
+  width: 600px;
+  height: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  background: white;
+  border: none;
+  margin-top: 8px;
+}
+
+#hr2 {
+  width: 675px;
+  height: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #e2e2e2;
+  border: none;
+  margin-top: 8px;
+}
+
+#hr3 {
+  width: 675px;
+  height: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #ffffff;
+  border: none;
+  margin-top: -8px;
+}
+
+
 
 main {
   display:block;
+  background-color: #f2f2f2;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #ffffff;
+  border-radius: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 675px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.5));
+  filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.5));
+
+}
+
+#title {
+  text-align: left;
+}
+
+h1 {
+  font-family: 'OpenSans', sans-serif;
+  font-size: 36px;
+  color: #4a6c96;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+p {
+  font-family: 'OpenSans', sans-serif;
+  color: #282828;
+  line-height: 1.5;
+}
+
+#description {
+  margin-top: 30px;
+  text-align: left;
+}
+
+#survey-form {
+  margin-top: 40px;
+}
+
+label {
+  font-family: 'OpenSans', sans-serif;
+  font-size: 18px;
+}
+
+#name-label {
+
+}
+
+#name {
+  padding: 10px 10px 10px 20px;
+  margin: 10px 0px 30px 0px;
+  border: 0px;
+  border-radius: 20px;
+  font-size: 1.125em;
+  width: 95%;
+}
+
+#email-label {
+
+}
+
+#email {
+  padding: 10px 10px 10px 20px;
+  margin: 10px 0px 30px 0px;
+  border: 0px;
+  border-radius: 20px;
+  font-size: 1.125em;
+  width: 95%;
+}
+
+#number-label {}
+
+#number {
+  padding: 10px 10px 10px 20px;
+  margin: 10px 0px 35px 0px;
+  border: 0px;
+  border-radius: 20px;
+  font-size: 1.125em;
+  width: 40%;
+}
+
+#radio-group1 {
+  margin: 10px 80px 30px 20px;
+}
+
+#dropdown-label {}
+
+select#dropdown {
+  padding: 10px 10px 10px 20px;
+  margin: 10px 0px 50px 0px;
+  border: 0px;
+  border-radius: 20px;
+  font-size: 1.125em;
+  width: 95%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; /* Remove default arrow */
+  background: white;
+  color: #757575;
+}
+
+#parks-visited {
+  margin: 10px 0px 35px 0px;
+
+}
+
+#park-name {
+  margin-top: 18px;
+  font-size: 12px;
+  margin-left: 20px;
+}
+
+#park-other-label {
+  margin-left: 40px;
+}
+
+#park-name-other {
+  padding: 10px 10px 10px 20px;
+  font-size: 1.125em;
+  margin: 10px 0px 30px 10px;
+  width: 300px;
+  border-radius: 20px;
+  border: 0px;
+}
+
+#rating {
+  margin-top: 18px;
+
+}
+
+#yesno {
+  margin-top: 18px;
+}
+
+#smartphone {
+  margin-top: 18px;
+}
+
+input [type=radio] {
+ border:0px;
+ width: 100%;
+ height: 6em;
+
+}
+
+#textarea {
+  border-style: none;
+  border-radius: 20px;
+  height: 200px;
+  width: 95%;
+  margin-top: 20px;
+  font-family: 'OpenSans', sans-serif;
+  font-size: 18px;
+  padding-top: 20px;
+  line-height: 1.5;
+  padding-left: 20px;
+
+}
+
+#button {
+  padding: 10px 30px 10px 30px;
+  font-family: 'OpenSans', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  background-color: #4a6c96;
+  color: white;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+
+#footer {
+  background-color: rgb(41, 81, 84);
+  margin-top: 120px;
+  display: block;
+  width:100%;
+  border-top: solid 1px #43786e;
+}
+
+#footer-content {
+  width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  padding-bottom: 100px;
+  height: 400px;
+  padding-top: 60px;
+  text-align: center;
+  color: white;
+}
+
+h5 {
+  color: white;
+  font-family: 'OpenSans', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+#illustration-image {
+  height: 200px;
+  border-radius: 100px;
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.25));
+  filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.25));
 }
